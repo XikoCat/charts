@@ -123,6 +123,8 @@ questions:
                                               description: Quilt
                                             - value: PUFFERFISH
                                               description: Pufferfish
+                                            - value: NEOFORGE
+                                              description: Neoforge
                                             - value: CUSTOM
                                               description: Custom
                                       - variable: CUSTOM_SERVER
@@ -345,6 +347,24 @@ questions:
                                           type: string
                                           default: ""
                                           show_if: [[TYPE, "=", "AUTO_CURSEFORGE"]]
+                                      - variable: NEOFORGEVERSION
+                                        label: Neoforge Version
+                                        schema:
+                                          type: string
+                                          default: ""
+                                          show_if: [[TYPE, "=", "NEOFORGE"]]
+                                      - variable: NEOFORGE_INSTALLER
+                                        label: Neoforge Installer
+                                        schema:
+                                          type: string
+                                          default: ""
+                                          show_if: [[TYPE, "=", "NEOFORGE"]]
+                                      - variable: NEOFORGE_INSTALLER_URL
+                                        label: Neoforge Installer URL
+                                        schema:
+                                          type: string
+                                          default: ""
+                                          show_if: [[TYPE, "=", "NEOFORGE"]]
                                       - variable: modpack_exclusions
                                         label: Configure modpack exclusions
                                         schema:
